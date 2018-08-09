@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 
-var submissionSchema = new mongoose.Schema({
+var commentSchema = new mongoose.Schema({
     text: String,
     author: {
         id: {
@@ -12,4 +12,4 @@ var submissionSchema = new mongoose.Schema({
     createdAt: Date
 });
 
-module.exports = mongoose.model("Submission", submissionSchema);
+module.exports = mongoose.model("Comment", commentSchema);
